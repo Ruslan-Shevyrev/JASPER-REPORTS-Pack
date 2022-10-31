@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final using JasperReports Library version 6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="TRIP_REQUEST" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7d6ea929-1592-4bd9-b3bb-60e908cc8323">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.xml"/>
+	<subDataset name="tab" uuid="6d429931-d958-4f20-9c89-87518f7894b8">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+		<queryString language="XPath">
+			<![CDATA[/Data/table/Entry]]>
+		</queryString>
+		<field name="NUM_PP" class="java.lang.String"/>
+		<field name="NAME" class="java.lang.String"/>
+		<field name="VALUE" class="java.lang.String"/>
+	</subDataset>
+	<queryString language="XPath">
+		<![CDATA[/Data]]>
+	</queryString>
+	<field name="LEADER" class="java.lang.String"/>
+	<field name="LEAD_POSITION" class="java.lang.String"/>
+	<field name="SIGN_DATE" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="627" splitType="Stretch">
+			<textField>
+				<reportElement x="-20" y="0" width="595" height="30" uuid="f2a0fa82-a0d2-442c-9092-3979a8d02d0e"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Общество с ограниченной ответственностью «Организация»"+
+"\n(ООО «Организация»)"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-20" y="30" width="595" height="30" uuid="48215209-c11c-4e3f-86f3-e8f148277790"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12" isBold="true" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Заявка на командировку"]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement positionType="Float" x="-5" y="70" width="549" height="30" uuid="fdaf7049-33ec-4e4e-b60a-a58829c7c8c3"/>
+				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+					<datasetRun subDataset="tab" uuid="b0a56ce1-2f42-4455-9180-a9e27af04849">
+						<datasetParameter name="XML_DATA_DOCUMENT">
+							<datasetParameterExpression><![CDATA[$P{XML_DATA_DOCUMENT}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_INPUT_STREAM">
+							<datasetParameterExpression><![CDATA[$P{XML_INPUT_STREAM}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_FILE">
+							<datasetParameterExpression><![CDATA[$P{XML_FILE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="net.sf.jasperreports.xml.source">
+							<datasetParameterExpression><![CDATA[$P{net.sf.jasperreports.xml.source}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_DATE_PATTERN">
+							<datasetParameterExpression><![CDATA[$P{XML_DATE_PATTERN}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_NUMBER_PATTERN">
+							<datasetParameterExpression><![CDATA[$P{XML_NUMBER_PATTERN}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_LOCALE">
+							<datasetParameterExpression><![CDATA[$P{XML_LOCALE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_TIME_ZONE">
+							<datasetParameterExpression><![CDATA[$P{XML_TIME_ZONE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:listContents height="30" width="549">
+						<textField isStretchWithOverflow="true">
+							<reportElement stretchType="ElementGroupHeight" x="0" y="0" width="40" height="30" uuid="373c481b-4aa8-492b-bb26-cb3fc2edbecf"/>
+							<box>
+								<topPen lineWidth="1.0"/>
+								<leftPen lineWidth="1.0"/>
+								<bottomPen lineWidth="1.0"/>
+								<rightPen lineWidth="1.0"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+								<font fontName="Times New Roman" size="12" isBold="false" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+								<paragraph lineSpacing="1_1_2"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{NUM_PP}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement stretchType="ElementGroupHeight" x="40" y="0" width="200" height="30" uuid="6f992543-8394-4f52-a612-5977f4e0d6d2"/>
+							<box padding="5">
+								<topPen lineWidth="1.0"/>
+								<leftPen lineWidth="1.0"/>
+								<bottomPen lineWidth="1.0"/>
+								<rightPen lineWidth="1.0"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle" markup="html">
+								<font fontName="Times New Roman" size="12" isBold="false" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+								<paragraph spacingBefore="5"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{NAME}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement stretchType="ElementGroupBottom" x="240" y="0" width="309" height="30" uuid="a865512c-5d4a-4ff8-9a22-987ab0c944cd"/>
+							<box padding="5">
+								<topPen lineWidth="1.0"/>
+								<leftPen lineWidth="1.0"/>
+								<bottomPen lineWidth="1.0"/>
+								<rightPen lineWidth="1.0"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle" markup="html">
+								<font fontName="Times New Roman" size="12" isBold="false" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+								<paragraph spacingBefore="5"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{VALUE}+"<br>"]]></textFieldExpression>
+						</textField>
+					</jr:listContents>
+				</jr:list>
+			</componentElement>
+			<staticText>
+				<reportElement positionType="Float" mode="Transparent" x="178" y="122" width="278" height="14" forecolor="#0707E6" uuid="9ada56ac-0e47-4102-b7d0-7feb8a28bc68">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<printWhenExpression><![CDATA[!$F{LEADER}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="10" pdfFontName="Times-Roman" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ДОКУМЕНТ ПОДПИСАН ЭЛЕКТРОННОЙ ПОДПИСЬЮ]]></text>
+			</staticText>
+			<textField pattern="dd.mm.yyyy hh:mm:ss" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="262" y="164" width="111" height="10" forecolor="#3229B3" uuid="71cb0430-cab4-4487-b8e2-2a600daf3664">
+					<printWhenExpression><![CDATA[!$F{LEADER}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" size="8" pdfFontName="Times-Roman" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SIGN_DATE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="190" y="135" width="256" height="10" forecolor="#1A15AB" uuid="ae2753a6-9569-49ec-8b86-f8744dde1724">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<printWhenExpression><![CDATA[!$F{LEADER}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="8" pdfFontName="Times-Roman" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[во внутренней системе СЭД ООО « Т.Б.М.]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="190" y="144" width="256" height="20" forecolor="#1013E3" uuid="b6ea5b82-ff72-4389-9ae4-af4781d79e84">
+					<printWhenExpression><![CDATA[!$F{LEADER}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Arial" size="14" pdfFontName="Times-Roman" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{LEADER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="190" y="164" width="70" height="10" forecolor="#200EA1" uuid="c3e8b25d-a5d7-407d-8c3c-84ed02ded5dc">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<printWhenExpression><![CDATA[!$F{LEADER}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" pdfFontName="Times-Roman" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Время подписи]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="-4" y="130" width="160" height="30" isRemoveLineWhenBlank="true" uuid="a3948730-7fe7-4a96-a3e9-b82b6a7471cc">
+					<printWhenExpression><![CDATA[!$F{LEADER}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="9.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{LEAD_POSITION}]]></textFieldExpression>
+			</textField>
+			<rectangle radius="10">
+				<reportElement positionType="Float" mode="Transparent" x="170" y="114" width="300" height="62" isPrintInFirstWholeBand="true" forecolor="#144CB5" uuid="46a5c477-3c52-4b85-9523-e6e7c35831b7">
+					<printWhenExpression><![CDATA[!$F{LEADER}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+		</band>
+	</detail>
+</jasperReport>

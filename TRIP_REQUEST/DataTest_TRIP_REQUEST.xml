@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Data>
+	<LEADER>Петров Петр Петрович</LEADER>
+	<LEAD_POSITION>Заместитель начальника отдела</LEAD_POSITION>
+	<SIGN_DATE>30.09.2022 18:16:37</SIGN_DATE>
+	<table>
+		<Entry>
+			<NUM_PP>1</NUM_PP>
+			<NAME>Дата</NAME>
+			<VALUE>30.09.22</VALUE>
+		</Entry>
+		<Entry>
+			<NUM_PP>2</NUM_PP>
+			<NAME>Фамилия Имя Отчество</NAME>
+			<VALUE>Иванов Иван Иванович</VALUE>
+		</Entry>
+		<Entry>
+			<NUM_PP>3</NUM_PP>
+			<NAME>Подразделение</NAME>
+			<VALUE>департамент информационных технологий,отдел аналитики и сопровождения программного обеспечения</VALUE>
+		</Entry>
+		<Entry>
+			<NUM_PP>4</NUM_PP>
+			<NAME>Должность</NAME>
+			<VALUE>ведущий инженер-аналитик</VALUE>
+		</Entry>
+		<Entry>
+			<NUM_PP>5</NUM_PP>
+			<NAME>Сроки командировки</NAME>
+			<VALUE>C 27.12.2022 ПО 27.12.2022</VALUE>
+		</Entry>
+		<Entry>
+			<NUM_PP>6</NUM_PP>
+			<NAME>Цель командировки</NAME>
+			<VALUE>Обучение работников филиала</VALUE>
+		</Entry>
+		<Entry>
+			<NUM_PP>7</NUM_PP>
+			<NAME>Организация</NAME>
+			<VALUE>ООО "Организация"</VALUE>
+		</Entry>
+		<Entry>
+			<NUM_PP>8</NUM_PP>
+			<NAME>Страна</NAME>
+			<VALUE>Россия</VALUE>
+		</Entry>
+		<Entry>
+			<NUM_PP>9</NUM_PP>
+			<NAME>Населенный пункт</NAME>
+			<VALUE>тестовый населенный пункт</VALUE>
+		</Entry>
+		<Entry>
+			<NUM_PP>10</NUM_PP>
+			<NAME>Область</NAME>
+			<VALUE>тестовый регион</VALUE>
+		</Entry>
+		<Entry>
+			<NUM_PP>11</NUM_PP>
+			<NAME>Суточные (руб.)</NAME>
+			<VALUE>100,00</VALUE>
+		</Entry>
+		<Entry>
+			<NUM_PP>12</NUM_PP>
+			<NAME>Суточные Sк (руб.)</NAME>
+			<VALUE>50,00</VALUE>
+		</Entry>
+		<Entry>
+			<NUM_PP>13</NUM_PP>
+			<NAME>Проезд (руб.)</NAME>
+			<VALUE>100,00</VALUE>
+		</Entry>
+		<Entry>
+			<NUM_PP>14</NUM_PP>
+			<NAME>Проживание (руб.)</NAME>
+			<VALUE>150,00</VALUE>
+		</Entry>
+		<Entry>
+			<NUM_PP>15</NUM_PP>
+			<NAME>Другие расходы (руб.)</NAME>
+			<VALUE>100,00</VALUE>
+		</Entry>
+		<Entry>
+			<NUM_PP>16</NUM_PP>
+			<NAME>ИТОГО расходов</NAME>
+			<VALUE>500,00</VALUE>
+		</Entry>
+		<Entry>
+			<NUM_PP>17</NUM_PP>
+			<NAME>Примечание к другим расходам</NAME>
+			<VALUE>На канцелярские принадлежности</VALUE>
+		</Entry>
+		<Entry>
+			<NUM_PP>18</NUM_PP>
+			<NAME>Использование такси</NAME>
+			<VALUE>Да</VALUE>
+		</Entry>
+		<Entry>
+			<NUM_PP>19</NUM_PP>
+			<NAME>Причина использования такси</NAME>
+			<VALUE>Отсутствие общественного транспорта</VALUE>
+		</Entry>
+	</table>
+</Data>
