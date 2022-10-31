@@ -5,8 +5,7 @@ All the reports contain test data
 
 | Name  | Description |
 | ------------- | ------------- |
-| QUESTIONARY_270_REPORT  | 
-Questionnaire for assessing the professional competencies of the person being certified.  |
+| QUESTIONARY_270_REPORT  | Questionnaire for assessing the professional competencies of the person being certified. |
 | TRIP_ORDER | Order for a business trip. |
 | TRIP_REQUEST | Buisness trip request |
 
