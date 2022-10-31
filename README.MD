@@ -1,13 +1,15 @@
 # JASPER-REPORTS-Pack
 
 It includes my Jasper Reports.\
-All the reports contain test data
+All the reports contain test data.\
+
+**Jasper Studio 6.**
 
 | Name  | Description |
 | ------------- | ------------- |
 | QUESTIONARY_270_REPORT  | Questionnaire for assessing the professional competencies of the person being certified. |
 | TRIP_ORDER | Order for a business trip. |
-| TRIP_REQUEST | Buisness trip request |
+| TRIP_REQUEST | Buisness trip request. |
 
 <table>
   <tr>
