@@ -3,7 +3,7 @@
 It includes my Jasper Reports.\
 All the reports contain test data.\
 
-**Jasper Studio 6.**
+## Jasper Studio 6
 
 | Name  | Description |
 | ------------- | ------------- |
