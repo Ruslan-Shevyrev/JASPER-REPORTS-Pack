@@ -2,7 +2,7 @@
 <xmlDataAdapter class="net.sf.jasperreports.data.xml.XmlDataAdapterImpl">
 	<name>DataAdapter</name>
 	<dataFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="repositoryDataLocation">
-		<location>DataTest_QUESTIONARY.xml</location>
+		<location>DataTest_QUESTIONARY_270_REPORT.xml</location>
 	</dataFile>
 	<useConnection>true</useConnection>
 	<namespaceAware>false</namespaceAware>
