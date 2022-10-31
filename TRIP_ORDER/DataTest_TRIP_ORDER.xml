@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Data>
+	<SOTRUD_FIO>Иванов Иван Иванович</SOTRUD_FIO>
+	<SOTRUD_DEP>Департамент информационных технологий,отдел аналитики и сопровождения программного обеспечения</SOTRUD_DEP>
+	<SOTRUD_POSITION>Ведущий инженер-аналитик</SOTRUD_POSITION>
+	<ORDER_NUMB>2022к/шк 190</ORDER_NUMB>
+	<ORDER_DATE>30.09.2022</ORDER_DATE>
+	<JUR_PERS>Россия, тестовый регион, тестовый населенный пункт, ООО "Организация"</JUR_PERS>
+	<DAY_COUNT>1</DAY_COUNT>
+	<PERIOD>c "27" Декабрь 2022г. по "27" Декабрь 2022г.</PERIOD>
+	<PURPOSE>Оказание услуг по договору</PURPOSE>
+	<TAB_NUMB>291</TAB_NUMB>
+	<FIN_SOURCE>ООО "Организация"</FIN_SOURCE>
+	<DOC_OSN>Служебное задание</DOC_OSN>
+	<SIGN_FIO>Петров Петр Петрович</SIGN_FIO>
+	<SIGN_DATE>30.09.2022 18:16:37</SIGN_DATE>
+	<SIGN_DOL>Заместитель начальника отдела</SIGN_DOL>
+	<SELF_SIGN_FIO>Иванов Иван Иванович</SELF_SIGN_FIO>
+	<SELF_SIGN_DATE>01.10.2022 15:10:42</SELF_SIGN_DATE>
+	<SELF_SIGN_DOL>Ведущий инженер-аналитик</SELF_SIGN_DOL>
+</Data>

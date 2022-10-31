@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final using JasperReports Library version 6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="TRIP_ORDER" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6405932f-b133-4802-8676-df66ecce2310">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.xml"/>
+	<subDataset name="Dataset1" uuid="402b2f56-8329-4107-a115-02092584647d">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+		<queryString language="XPath">
+			<![CDATA[/Data/table/Sign]]>
+		</queryString>
+		<field name="SIGN_FIO" class="java.lang.String"/>
+		<field name="SIGN_DATE" class="java.lang.String"/>
+		<field name="SIGN_DOL" class="java.lang.String"/>
+	</subDataset>
+	<subDataset name="Dataset2" uuid="fbf0e194-99c4-4419-9c6b-eebee344f3ec">
+		<queryString language="XPath">
+			<![CDATA[/Data/table/Entry]]>
+		</queryString>
+		<field name="SIGN_FIO" class="java.lang.String"/>
+	</subDataset>
+	<queryString language="XPath">
+		<![CDATA[/Data]]>
+	</queryString>
+	<field name="ORDER_NUMB" class="java.lang.String"/>
+	<field name="ORDER_DATE" class="java.lang.String"/>
+	<field name="SOTRUD_FIO" class="java.lang.String"/>
+	<field name="TAB_NUMB" class="java.lang.String"/>
+	<field name="SOTRUD_DEP" class="java.lang.String"/>
+	<field name="SOTRUD_POSITION" class="java.lang.String"/>
+	<field name="JUR_PERS" class="java.lang.String"/>
+	<field name="DAY_COUNT" class="java.lang.String"/>
+	<field name="PERIOD" class="java.lang.String"/>
+	<field name="PURPOSE" class="java.lang.String"/>
+	<field name="FIN_SOURCE" class="java.lang.String"/>
+	<field name="DOC_OSN" class="java.lang.String"/>
+	<field name="SIGN_FIO" class="java.lang.String"/>
+	<field name="SIGN_DATE" class="java.lang.String"/>
+	<field name="SIGN_DOL" class="java.lang.String"/>
+	<field name="SELF_SIGN_FIO" class="java.lang.String"/>
+	<field name="SELF_SIGN_DATE" class="java.lang.String"/>
+	<field name="SELF_SIGN_DOL" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="686" splitType="Stretch">
+			<textField>
+				<reportElement positionType="Float" x="10" y="0" width="540" height="10" uuid="73075b93-ab32-4299-961d-645118b03bd2"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="true" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Унифицированная форма № Т 9"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="10" y="10" width="540" height="10" uuid="05cfd392-10fb-434e-9885-2c56865746c4"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Утверждена постановлением Госкомстата РФ"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="10" y="20" width="540" height="10" uuid="2a0f551c-f8d1-4e8e-ace1-d711740897dd"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed"/>
+				</textElement>
+				<textFieldExpression><![CDATA["от 5 января 2004 г. № 1"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="450" y="33" width="100" height="16" uuid="15e21d65-e1a9-4448-92d6-06ed5b72e882"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Код"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="450" y="50" width="100" height="16" uuid="1d91415c-a9e8-45c3-b6c5-e8f9caff53ac"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["0301022"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="450" y="66" width="100" height="16" uuid="d040c232-0d6a-49b3-9043-13b036261b07"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["70415464"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="350" y="66" width="100" height="16" uuid="b06ffbfc-4abb-4ed1-995e-b89c701e78ba"/>
+				<box rightPadding="4"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["по ОКПО"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="10" y="66" width="340" height="16" uuid="e9017a66-b403-4954-95c7-c276b6d71242"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="11.5" isBold="true" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ООО \"Организация\""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="10" y="82" width="340" height="16" uuid="8656ea30-f468-4b9d-885f-e6a47491d6c9"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="5.5" isBold="false" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["наименование организации"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="420" y="110" width="100" height="12" uuid="9f2d9e4a-1d26-46d0-9a3b-0abd1f1dbeb5"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Дата составления"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="320" y="110" width="100" height="12" uuid="1ac81307-9677-4938-b3d0-8d86852a9d19"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Номер приказа"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="420" y="122" width="100" height="12" uuid="2ad30230-101d-4d4d-bb7b-f4fd13b9a963"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9.5" isBold="true" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ORDER_DATE}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="320" y="122" width="100" height="12" uuid="a451f72f-c65e-4fca-aae8-fcb998ecb76c"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9.5" isBold="true" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ORDER_NUMB}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="10" y="134" width="540" height="48" uuid="621e34bc-0ced-4f11-92c7-0140ca82e24b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="11.5" isBold="true" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Приказ \n"+
+"(Распоряжение)\n"+
+"о направлении работника в командировку"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="450" y="218" width="100" height="12" uuid="2e54daf3-9f4c-4973-a5f8-a175ff4d02a8"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9.5" isBold="false" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TAB_NUMB}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="450" y="206" width="100" height="12" uuid="8bb047d3-4900-4dc9-bfe9-c4a1869eeb7c"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Табельный номер"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="10" y="192" width="440" height="18" uuid="d99ef724-0eb5-49ae-b22f-e19f0b65aa2d"/>
+				<textElement>
+					<font fontName="Arial" size="9.5" isBold="true" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Направить в командировку:"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="210" width="540" height="20" uuid="1d56808f-7d11-4aa3-b147-1b351f1e72a0"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Arial" size="9.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SOTRUD_FIO}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="240" width="540" height="15" uuid="a434b6eb-dcce-4a3b-979d-f4db7f12c2d3"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Arial" size="9.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SOTRUD_DEP}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="10" y="230" width="540" height="8" uuid="c5817bb9-d40e-47f5-b3e4-ab4406bf4600"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="5.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["фамилия, имя, отчество"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="10" y="255" width="540" height="8" uuid="aa4a4a19-e5da-4a7b-8f42-5b5d00a6b8a8"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="5.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["структурное подразделение"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="265" width="540" height="15" uuid="2a023193-0b8f-49b2-ad44-6d4f7f0a7d08"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Arial" size="9.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SOTRUD_POSITION}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="10" y="280" width="540" height="8" uuid="a48dafb9-db74-4b05-921c-3d852b98f765"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="5.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["должность (специальность, профессия)"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="290" width="540" height="15" uuid="1846fddf-a69f-43bf-9ac2-1c3a21e77df5"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Arial" size="9.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{JUR_PERS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="10" y="305" width="540" height="8" uuid="7528e00d-62f5-4ec3-a9ac-28a7798bc787"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="5.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["место назначения (страна, город, организация)"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="10" y="320" width="60" height="20" uuid="fb52c80c-9bfd-42e9-9020-0d0e1a5c1e64"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="9.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Сроком на"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="70" y="320" width="70" height="20" uuid="e70843d2-f8b0-462f-9110-49e5bd7edced"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DAY_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="140" y="320" width="120" height="20" uuid="8ea26d88-738d-42dd-8a93-045c58a37ccb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["календарных дней"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="350" width="250" height="20" uuid="6d888193-a462-4c1a-93da-a433873c1f63"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="9.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PERIOD}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="10" y="380" width="50" height="20" uuid="8c70ebe7-9189-4caa-ad3c-d3dcbb2b1846"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="9.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["с целью"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="60" y="380" width="490" height="20" uuid="e36a34a4-9c15-47dc-b12e-fc3dd3815b04"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="9.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PURPOSE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="10" y="410" width="150" height="20" uuid="8fa33785-c0b3-4730-bd7b-b1f8c9a99ceb"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="9.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["командировка за счет средств"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="160" y="410" width="390" height="20" uuid="3c4cd195-8110-46e1-b3a9-ffe468771d19"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="9.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FIN_SOURCE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="10" y="440" width="70" height="40" uuid="d4d8bbda-a691-4ebe-941f-935d1cac4789"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="9.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["основание \n"+
+"(документ, \n"+
+"номер, дата)"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="80" y="460" width="470" height="20" uuid="9b7d4b7c-5d93-4406-b111-10790eebe710"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="9.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DOC_OSN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="10" y="430" width="540" height="8" uuid="32451ffa-54e2-4a32-afed-2d0780e705f8"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="5.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["указать источник финансирования"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="10" y="480" width="540" height="8" uuid="956fa80c-ba54-41bf-b023-bfb8cf4befc8"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="5.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["служебное задание, другое основание, указать"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" mode="Transparent" x="192" y="502" width="278" height="14" forecolor="#0707E6" uuid="3e9bffbb-8a91-4f5a-a5f9-37fcc789bfcc">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<printWhenExpression><![CDATA[!$F{SIGN_FIO}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="10" pdfFontName="Times-Roman" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ДОКУМЕНТ ПОДПИСАН ЭЛЕКТРОННОЙ ПОДПИСЬЮ]]></text>
+			</staticText>
+			<textField pattern="dd.mm.yyyy hh:mm:ss" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="276" y="544" width="111" height="10" forecolor="#3229B3" uuid="e3282d27-f1f8-4e9c-b0f9-e95eccfb6cf6">
+					<printWhenExpression><![CDATA[!$F{SIGN_FIO}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" size="8" pdfFontName="Times-Roman" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SIGN_DATE}]]></textFieldExpression>
+			</textField>
+			<rectangle radius="10">
+				<reportElement positionType="Float" mode="Transparent" x="181" y="494" width="300" height="62" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" forecolor="#144CB5" uuid="21d3e066-d199-4a75-8085-3384f0d4bea3">
+					<printWhenExpression><![CDATA[!$F{SIGN_FIO}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="204" y="515" width="256" height="10" forecolor="#1A15AB" uuid="6524458c-d9ce-46ee-99ed-22e0d22109a6">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<printWhenExpression><![CDATA[!$F{SIGN_FIO}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="8" pdfFontName="Times-Roman" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[во внутренней системе СЭД ООО « Т.Б.М.]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="204" y="524" width="256" height="20" forecolor="#1013E3" uuid="51ff46ac-3d8e-4416-ae56-ece7ad369022">
+					<printWhenExpression><![CDATA[!$F{SIGN_FIO}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Arial" size="14" pdfFontName="Times-Roman" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SIGN_FIO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="204" y="544" width="70" height="10" forecolor="#200EA1" uuid="b6d32f63-f5bb-421b-a2fc-f57c0b5ace5e">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<printWhenExpression><![CDATA[!$F{SIGN_FIO}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" pdfFontName="Times-Roman" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Время подписи]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="350" y="50" width="100" height="16" uuid="cf6ec767-272e-4d36-a392-117c236a6ddb"/>
+				<box rightPadding="4"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Форма по ОКУД"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="10" y="510" width="160" height="30" isRemoveLineWhenBlank="true" uuid="216a2498-a154-493a-9925-ef20f3a2dec9">
+					<printWhenExpression><![CDATA[!$F{SIGN_FIO}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="9.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SIGN_DOL}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" mode="Transparent" x="192" y="572" width="278" height="14" forecolor="#0707E6" uuid="d884c51d-0917-465c-9379-06b9a3633122">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<printWhenExpression><![CDATA[!$F{SELF_SIGN_FIO}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="10" pdfFontName="Times-Roman" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ДОКУМЕНТ ПОДПИСАН ЭЛЕКТРОННОЙ ПОДПИСЬЮ]]></text>
+			</staticText>
+			<textField pattern="dd.mm.yyyy hh:mm:ss" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="276" y="614" width="111" height="10" forecolor="#3229B3" uuid="656c77c1-88cd-455e-8fd4-1bd12ea8a186">
+					<printWhenExpression><![CDATA[!$F{SELF_SIGN_FIO}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" size="8" pdfFontName="Times-Roman" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SELF_SIGN_DATE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="204" y="585" width="256" height="10" forecolor="#1A15AB" uuid="42480f5a-240f-4f1b-a33b-cdb33a881280">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<printWhenExpression><![CDATA[!$F{SELF_SIGN_FIO}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="8" pdfFontName="Times-Roman" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[во внутренней системе СЭД ООО « Т.Б.М.]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="204" y="594" width="256" height="20" forecolor="#1013E3" uuid="0af26c5d-ad0a-4498-92a1-e3ac1260be12">
+					<printWhenExpression><![CDATA[!$F{SELF_SIGN_FIO}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Arial" size="14" pdfFontName="Times-Roman" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SELF_SIGN_FIO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="204" y="614" width="70" height="10" forecolor="#200EA1" uuid="50ac3f3e-d717-482d-99f7-f6d0f54754fe">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<printWhenExpression><![CDATA[!$F{SELF_SIGN_FIO}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8" pdfFontName="Times-Roman" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Время подписи]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="580" width="160" height="30" isRemoveLineWhenBlank="true" uuid="4edff68b-1347-40e1-b912-14bdb5ce309d">
+					<printWhenExpression><![CDATA[!$F{SELF_SIGN_FIO}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="9.5" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SELF_SIGN_DOL}]]></textFieldExpression>
+			</textField>
+			<rectangle radius="10">
+				<reportElement positionType="Float" mode="Transparent" x="181" y="565" width="300" height="62" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" forecolor="#144CB5" uuid="fd4f9952-03f5-4ee5-9833-64f558a01b0e">
+					<printWhenExpression><![CDATA[!$F{SELF_SIGN_FIO}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+		</band>
+	</detail>
+</jasperReport>
