@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmlDataAdapter class="net.sf.jasperreports.data.xml.XmlDataAdapterImpl">
+	<name>DataAdapter</name>
+	<dataFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="repositoryDataLocation">
+		<location>DataTest_QUESTIONARY.xml</location>
+	</dataFile>
+	<useConnection>true</useConnection>
+	<namespaceAware>false</namespaceAware>
+	<selectExpression/>
+	<locale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">ru_RU</locale>
+	<timeZone xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">Europe/Moscow</timeZone>
+</xmlDataAdapter>

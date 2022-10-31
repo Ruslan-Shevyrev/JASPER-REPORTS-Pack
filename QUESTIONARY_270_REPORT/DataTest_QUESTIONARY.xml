@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Data>
+	<FIO>ИВАНОВ ИВАН ИВАНОВИЧ</FIO>
+	<ResultQuestionary>
+		<Entry>
+			<QUESTION>Клиентоориентированность</QUESTION>
+			<SELF_RESULT>90%</SELF_RESULT>
+			<LEADER_RESULT>90%</LEADER_RESULT>
+			<OTHERS_RESULT>85%</OTHERS_RESULT>
+			<NOTE>Предлагает взаимовыгодные решения в работе с Клиентами и коллегами</NOTE>
+		</Entry>
+		<Entry>
+			<QUESTION>Работа в команде</QUESTION>
+			<SELF_RESULT>80%</SELF_RESULT>
+			<LEADER_RESULT>90%</LEADER_RESULT>
+			<OTHERS_RESULT>85%</OTHERS_RESULT>
+			<NOTE>Эффективно взаимодействует с членами команды для достижения общей цели</NOTE>
+		</Entry>
+		<Entry>
+			<QUESTION>Уважение</QUESTION>
+			<SELF_RESULT>90%</SELF_RESULT>
+			<LEADER_RESULT>70%</LEADER_RESULT>
+			<OTHERS_RESULT>80%</OTHERS_RESULT>
+			<NOTE>Проявляет открытость и доброжелательность во взаимодействии с Клиентами и коллегами</NOTE>
+		</Entry>
+		<Entry>
+			<QUESTION>Ориентация на развитие</QUESTION>
+			<SELF_RESULT>80%</SELF_RESULT>
+			<LEADER_RESULT>90%</LEADER_RESULT>
+			<OTHERS_RESULT>70%</OTHERS_RESULT>
+			<NOTE>Проявляет заинтересованность к получению новых знаний, применяет их на практике</NOTE>
+		</Entry>
+		<Entry>
+			<QUESTION>Качество</QUESTION>
+			<SELF_RESULT>90%</SELF_RESULT>
+			<LEADER_RESULT>70%</LEADER_RESULT>
+			<OTHERS_RESULT>70%</OTHERS_RESULT>
+			<NOTE>Выполняет работу с заданными показателями в срок</NOTE>
+		</Entry>
+		<Entry>
+			<QUESTION>Эффективность</QUESTION>
+			<SELF_RESULT>80%</SELF_RESULT>
+			<LEADER_RESULT>90%</LEADER_RESULT>
+			<OTHERS_RESULT>75%</OTHERS_RESULT>
+			<NOTE>Достигает максимального результата в минимальные сроки и с наименьшими ресурсами</NOTE>
+		</Entry>
+	</ResultQuestionary>
+	<LEADER_STRENGTHS>Хорошая работа в комманде, нацеленность на результат</LEADER_STRENGTHS>
+	<LEADER_DEV_ZONES>Oracle APEX, PL/SQL</LEADER_DEV_ZONES>
+	<SELF_STRENGTHS>Обучаемость, усердие</SELF_STRENGTHS>
+	<SELF_DEV_ZONES>Jasper REPORTS, Oracle DataBase</SELF_DEV_ZONES>
+	<OthersStrengths>
+		<Entry>
+			<ANSWER>Технические знания, заинтересованность в работе</ANSWER>
+		</Entry>
+		<Entry>
+			<ANSWER>Сильные лидерские качества</ANSWER>
+		</Entry>
+	</OthersStrengths>
+	<OthersDevZones>
+		<Entry>
+			<ANSWER>Oracle PL/SQL</ANSWER>
+		</Entry>
+		<Entry>
+			<ANSWER>Python, Node.js</ANSWER>
+		</Entry>
+	</OthersDevZones>
+</Data>
